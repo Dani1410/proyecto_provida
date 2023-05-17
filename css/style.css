@@ -1,0 +1,146 @@
+/* IMPORTACION DE FUENTE ----------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ESTILOS GENERALES ----------------------------------------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* FONDO ----------------------------------------------------------------*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    135deg,
+    #00b7d4,
+    #505488,
+    #2f3f80,
+    #161569,
+    #5a4894,
+    #a950a1,
+    #ff7cae
+  );
+  background-size: 500%;
+  animation: fondo__animado 10s infinite;
+}
+
+/* ANIMACION DEL FONDO ----------------------------------------------------------------*/
+
+@keyframes fondo__animado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* HEADER ----------------------------------------------------------------*/
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  padding: 30px 20px;
+}
+
+#header .container .logo {
+  font-size: 2.4em;
+}
+
+#header .container .bar {
+  font-size: 1.6em;
+}
+
+#header .container .bar a,
+#header .container a {
+  padding-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+#header .container .bar a:hover,
+#header .container a:hover {
+  color: red;
+}
+
+/* HERO ----------------------------------------------------------------*/
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+#hero h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 0px #000000, 7px 7px 0px #353535;
+  font-size: 10em;
+}
+
+/* SECCION DEFINICION PROVIDA ----------------------------------------------------------------*/
+
+#definicion__provida .container {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#definicion__provida .img__provida {
+  background-image: url("../img/provida.png");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+#definicion__provida .texto {
+  width: 50%;
+  max-width: 600px;
+  padding-left: 30px;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* QUE ES EL ABORTO ----------------------------------------------------------------*/
+
+#qes__aborto .container {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#qes__aborto .img__aborto {
+  background-image: url("../img/aborto.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+#qes__aborto .texto {
+  width: 50%;
+  max-width: 600px;
+  padding-left: 30px;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#qes__aborto .texto h2 {
+  color: #ffffff;
+}
