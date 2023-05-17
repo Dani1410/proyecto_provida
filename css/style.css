@@ -200,6 +200,21 @@ body {
   background-color: #4e4e4e;
 }
 
+/* VIDEO --------------------------------------------------------------*/
+
+#video .container{
+    display: flex;
+    margin: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#video .container .video video{
+    width: 800px;
+    height: 600px;
+}
+
 /* RIESGOS -------------------------------------------------------- */
 
 #riesgos .container {
