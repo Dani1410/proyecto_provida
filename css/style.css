@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
 /* FONDO ----------------------------------------------------------------*/
 
 body {
@@ -114,6 +122,10 @@ body {
   align-items: center;
 }
 
+#definicion__provida .texto {
+  color: #ffffff;
+}
+
 /* QUE ES EL ABORTO ----------------------------------------------------------------*/
 
 #qes__aborto .container {
@@ -141,6 +153,118 @@ body {
   align-items: center;
 }
 
-#qes__aborto .texto h2 {
+#qes__aborto .texto {
   color: #ffffff;
+}
+
+/* ARGUMENTOS ----------------------------------------------------------------*/
+
+#argumentos .container {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#argumentos .container h2 {
+  font-size: 2em;
+  color: white;
+}
+
+#argumentos .container .tabla__argumentos {
+  margin-top: 50px;
+  border: 1px solid black;
+  color: white;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 10px;
+  border-spacing: 2px;
+  border-color: white;
+  margin: 0px 50px;
+}
+
+#argumentos .container .tabla__argumentos thead tr {
+  font-size: 1em;
+  text-align: justify;
+  padding: 10px;
+}
+
+#argumentos .container .tabla__argumentos tbody td {
+  font-size: 1em;
+  text-align: justify;
+  padding: 30px 10px;
+}
+
+#argumentos .container .tabla__argumentos tbody tr:hover {
+  background-color: #4e4e4e;
+}
+
+/* RIESGOS -------------------------------------------------------- */
+
+#riesgos .container {
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#riesgos .container .texto h2 {
+  text-align: center;
+  color: white;
+}
+
+#riesgos .container .texto p {
+  text-align: justify;
+  color: white;
+}
+
+#riesgos .container .texto li {
+  color: white;
+  list-style: decimal;
+}
+
+#riesgos .container .texto li,
+#riesgos .container .texto p {
+  font-size: 1.1em;
+  margin: 0px 400px;
+}
+
+/* FOOTER ---------------------------------------------------------------- */
+
+footer {
+  background-color: white;
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer h4 {
+  margin-bottom: 30px;
+  color: black;
+  font-weight: 700;
+}
+
+.box__footer a {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, .7);
+  font-weight: 600;
+}
+
+.box__footer a:hover {
+  opacity: 0.8;
 }
